@@ -32,8 +32,7 @@
                 <div class="home-text">
                     <h6 class="student">Junior Web Developer</h6>
                     <h1 class="name">Masato</h1>
-                    <p class="small-intro">Hi, my name is Masato Deweerdt - 31 yo and currently learning web development
-                    </p>
+                    <p class="small-intro"></p>
                 </div>
             </div>
         </div>
@@ -66,9 +65,9 @@
             anime({
                 targets: '.student span',
                 opacity: 1,
-                duration: 600,
-                easing: 'easeInSine',
-                delay: anime.stagger(40, { start: 1500 })
+                duration: 1000,
+                easing: 'easeInOutSine',
+                delay: anime.stagger(40, { start: 5500 })
             })
 
             // NAME === FADE IN
@@ -77,25 +76,44 @@
                 opacity: 1,
                 duration: 3000,
                 easing: 'easeInSine',
-                delay: anime.stagger(100, { start: 2300 })
+                delay: anime.stagger(100, { start: 2000 })
             })
 
             // NAME === 2ND ANIMATION UP/DOWN LETTER
             anime({
+                targets: '.name .char1, .name .char6',
+                keyframes: [
+                    { translateX: 600, duration: 3000 },
+                    { translateY: 50, duration: 3000 }
+                ],
+                easing: 'easeInCubic',
+                direction: 'reverse',
+                delay: 6000,
+                // translateX: '40%',
+                // rotate: '45deg',
+                // duration: 1600,
+                // delay: 2000,
+                // direction: 'alternate'
+            })
+            anime({
                 targets: '.name .char2, .name .char4',
                 keyframes: [
-                    { translateY: 90, duration: 5000 }
+                    { translateY: 300, duration: 3000 },
+                    { translateX: 100, duration: 3000 }
                 ],
-                easing: 'easeInOutExpo',
-                delay: 4000,
+                easing: 'easeInSine',
+                direction: 'reverse',
+                delay: 3000,
             })
             anime({
                 targets: '.name .char3, .name .char5',
                 keyframes: [
-                    { translateY: -90, duration: 5000 }
+                    { translateY: -50, duration: 2500 },
+                    { translateX: 40, duration: 2500 }
                 ],
-                easing: 'easeInOutExpo',
-                delay: 4000,
+                easing: 'easeInSine',
+                direction: 'reverse',
+                delay: 3000,
             })
 
             // LOGO
