@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="who.css">
+</head>
+
+<body>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <img src="" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="">Who I am</a></li>
+                        <li><a href="">My Project</a></li>
+                        <li><a href="">My Goal</a></li>
+                        <li class="btn"><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <div class="home">
+                <div class="container">
+                    <div class="grain"></div>
+                    <div class="redbox"></div>
+                    <div class="salmonbox"></div>
+                    <div class="description">
+                        <p>Hi, my name is Masato. I'm 32 and a Junior Front End Developer. I'm
+                            currently working on few projects to improve my skills in web development.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- JQUERY -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- LETTERING JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+        <!-- ANIME JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script>
+            anime({
+                targets: '.redbox',
+                keyframes: [
+                    { translateY: 90, duration: 1000 }
+                ],
+                easing: 'easeInSine',
+                direction: 'normal',
+                delay: 1200
+            })
+            anime({
+                targets: '.grain',
+                keyframes: [
+                    { translateY: -90, duration: 1000 }
+                ],
+                easing: 'easeInSine',
+                direction: 'normal',
+                delay: 1200
+            })
+            anime({
+                targets: '.salmonbox',
+                keyframes: [
+                    { translateY: 290, duration: 1000 }
+                ],
+                easing: 'easeInOutSine',
+                direction: 'normal',
+                delay: 1200
+            })
+        </script>
+    </body>
+
+</html>
