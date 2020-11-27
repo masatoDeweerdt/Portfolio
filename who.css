@@ -104,25 +104,25 @@ header .menu ul li.btn a:hover {
 .description {
     position: absolute;
     top: 20px;
-    left: 780px;
-    border: 1px solid grey;
+    left: 770px;
+    border: 1px solid rgb(42, 42, 42);
     width: 500px;
     height: 500px;
     padding: 45px;
     text-align: justify;
-    background: url(/images/sable.jpg);
+    background: url(/images/paper_1.png);
+    background-color: black;
+    opacity: 0.6;
 }
 .description:after {
     content: '';
-    background-image: url(/images/sable.jpg);
-    opacity: 0.3;
-    position: fixed;
 }
 
 .description p {
+    position: absolute;
     color: white;
     font-size: 20px;
     text-align: justify;
     letter-spacing: 1px;
-    z-index: 1;
+    z-index: 5;
 }

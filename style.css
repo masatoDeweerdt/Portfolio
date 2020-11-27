@@ -98,13 +98,20 @@ header .menu ul li.btn a:hover {
 .home-text h1 {
     text-transform: uppercase;
     font-size: 100px;
+    margin-top: 50px;
 }
 
 .home-text p{
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
     max-width: 500px;
     font-size: 18px;
     margin-top: 200px;
     margin-left: 50px;
+}
+.home-text p ul li {
+    list-style-type: none;
 }
 
 .home-text .name span {
